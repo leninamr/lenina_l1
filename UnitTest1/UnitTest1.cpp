@@ -27,7 +27,8 @@ namespace UnitTest1
 		}
 		TEST_METHOD(the_list_not_empty)
 		{
-			Assert::IsTrue(lst->isEmpty());
+			lst->push_back(1);
+			Assert::IsFalse(lst->isEmpty());
 		}
 		TEST_METHOD(get_size_correct_size)
 		{
