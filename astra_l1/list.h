@@ -26,7 +26,7 @@ class List {
 
 	public:
 		List();
-		~List() {};
+		~List();
 		size_t get_size() const;
 		bool isEmpty();
 		void push_back(int newElem);
