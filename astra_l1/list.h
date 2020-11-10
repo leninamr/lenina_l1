@@ -19,12 +19,14 @@ class List {
 		Elem* head;
 		Elem* tail;
 		size_t size;
+	
+		void reset_list();		
+		void add_first(int newElem);
+	
 
 	public:
 		List();
 		~List() {};
-		void reset_list();		
-		void add_first(int newElem);
 		size_t get_size() const;
 		bool isEmpty();
 		void push_back(int newElem);
