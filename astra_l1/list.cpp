@@ -17,6 +17,11 @@ List::List()
 	size = 0;
 }
 
+List::~List()
+{
+	clear();
+}
+
 void List::add_first(int newElem)
 {
 	head = new Elem(newElem);
